@@ -10,70 +10,46 @@
     <header>
         <div class="container">
             <h1>Skincare Shop</h1>
-            <input type="text" id="searchinput" placeholder="cari sebuah produk...">
-            <button id="cartbutton">cari(<span id="cartcount">0</span>)</button>
+            <input type="text" id="searchinput" placeholder="Cari produk...">
+            <button id="cartbutton">Cart (<span id="cartcount">0</span>)</button>
         </div>
     </header>
-    <header>
-        <nav>
+
+    <nav>
+        <div class="container">
             <a href="#">Home</a>
             <a href="#">Product</a>
             <a href="#">Keranjang (<span id="cart-count">0</span>)</a>
-        </nav>
-    </header>
         </div>
-    </header>
+    </nav>
 
     <main>
         <section id="products">
             <h2>Products</h2>
-            <div class="product" data-name="Product 1" data-price="20">
-                <h3>Product 1</h3>
-                <img src="skincare.jpg" alt="">
-                <p>Harga: Rp. 500.000</p>
-                <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
-            </div>
+            <div class="product-grid">
+                <!-- Product List -->
+                <div class="product" data-name="Product 1" data-price="20">
+                    <h3>Product 1</h3>
+                    <img src="skincare.jpg" alt="Product Image">
+                    <p>Harga: Rp. 500.000</p>
+                    <button onclick="addToCart('Product 1', 20)">Add to Cart</button>
+                </div>
 
-            <div class="product" data-name="Product 2" data-price="30">
-                <h3>Product 2</h3>
-                <img src="skincare2.jpg" alt="">
-                <p>Harga: Rp. 500.000</p>
-                <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
+                <div class="product" data-name="Product 2" data-price="30">
+                    <h3>Product 2</h3>
+                    <img src="skincare2.jpg" alt="Product Image">
+                    <p>Harga: Rp. 500.000</p>
+                    <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
+                </div>
+                
+                <!-- Additional products -->
+                <!-- Repeat this block for more products -->
             </div>
-            <!-- Add more products as needed -->
         </section>
-
-        <div class="product" data-name="Product 2" data-price="30">
-            <h3>Product 2</h3>
-            <img src="skintific.jpg" alt="">
-            <p>Harga: Rp. 450.000</p>
-            <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
-        </div>
-
-        <div class="product" data-name="Product 2" data-price="30">
-            <h3>Product 2</h3>
-            <img src="daviena.png" alt="">
-            <p>Harga: Rp. 400.000</p>
-            <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
-        </div> 
-
-        <div class="product" data-name="Product 2" data-price="30">
-            <h3>Product 2</h3>
-            <img src="omg1.jpg" alt="">
-            <p>Harga: Rp. 60.000</p>
-            <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
-        </div> 
-
-        <div class="product" data-name="Product 2" data-price="30">
-            <h3>Product 2</h3>
-            <img src="scora.jpg" alt="">
-            <p>Harga: Rp. 450.000</p>
-            <button onclick="addToCart('Product 2', 30)">Add to Cart</button>
-        </div><br><br><br> 
     </main>
 
     <footer>
-        <p>&copy; Skincare Shope</p>
+        <p>&copy; 2024 Skincare Shop</p>
     </footer>
 
     <script src="script.js"></script>
